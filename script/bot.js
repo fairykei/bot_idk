@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-const prefix = '!'; // Change this to your desired command prefix
+const prefix = '-b'; // Change this to your desired command prefix
 
 client.on('ready', () => {
 	console.log(`Bot is ready!`);
@@ -21,4 +21,4 @@ client.on('message', (message) => {
 	}
 });
 
-client.login('jLBd5HKbxCNH3k_gTsxIqxKCfED3W13G'); // Replace with your bot token
+client.login('YOUR_BOT_TOKEN'); // Replace with your bot token
