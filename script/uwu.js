@@ -1,12 +1,8 @@
-const {
-	BotFrameworkAdapter,
-	MemoryStorage,
-	ConversationState,
-	UserState,
-} = require('botbuilder');
+const { BotBuilder, ConversationRef } = require('botbuilder');
 const { RestifyAdapter } = require('botbuilder-adapter-restify');
 
-const adapter = new BotFrameworkAdapter({
+const restify = require('restify');
+const adapter = new RestifyAdapter(restify, {
 	appId: process.env.MICROSOFT_APP_ID,
 	appPassword: process.env.MICROSOFT_APP_PASSWORD,
 });
